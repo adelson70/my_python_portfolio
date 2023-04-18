@@ -1,7 +1,12 @@
 # my_python_portfolio
-my portfolio is aimed at python programs, as it aims to demonstrate my skills in that language
+in Portuguese
+Este portifolio é voltado para programas feitos na linguagem python com o objetivo de demonstrar minhas habilidades de programação e lógica nesta linguagem.
 
-Projects in development:
+Programas Desenvolvidos:
+Embaralhador de Palavras
 
 
-Developed projects:
+Programas em Desenvolvimento:
+
+
+in English
