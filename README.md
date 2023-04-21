@@ -6,6 +6,7 @@ Este portifolio é voltado para programas feitos na linguagem python com o objet
 Programas Desenvolvidos:
 
 Embaralhador de Palavra
+
 Jogo da Forca
 
 
