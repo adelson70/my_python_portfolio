@@ -1,6 +1,6 @@
 # by: adelson70
 # linkedin
-# https://www.linkedin.com/in/adelson-bittencourt-junior-6258b7258/
+# https://www.linkedin.com/in/adelson-bittencourt-junior/
 # PROGRAMA QUE EMBARALHA UMA PALAVRA
 #
 def embaralhar(palavra):
