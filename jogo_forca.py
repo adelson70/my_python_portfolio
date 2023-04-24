@@ -2,7 +2,7 @@
 # 
 # JOGO DA FORCA
 # 
-# https://www.linkedin.com/in/adelson-bittencourt-junior-6258b7258/
+# https://www.linkedin.com/in/adelson-bittencourt-junior/
 
 from os import system
 from time import sleep as pausa
