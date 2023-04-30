@@ -127,4 +127,4 @@ try:
 
 # se o usuario inserir uma letra ou numero decimal ira imprimir a mensagem de erro
 except ValueError:
-    print("Digite apenas numeros inteiros: ")
+    print("Digite apenas numeros inteiros")
