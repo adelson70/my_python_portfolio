@@ -76,6 +76,7 @@ while True:
 
     # bloco de codigo que fara o saque da conta bancaria
     elif opcao == "s":
+        numero_saques += 1
         limpar_tela()
 
         if saldo == 0:
@@ -90,7 +91,6 @@ while True:
             continue
 
         valor_saque = input("Digite um valor a ser sacado: ")
-        numero_saques += 1
         verifica_se_e_numero(valor_saque)
         
         while e_numero == False: # enquando o usuario não informar um numero
@@ -114,6 +114,8 @@ while True:
             continue
 
         else:
+            limpar_tela()
+            print(f"Você sacou R$ {valor_saque:.2f}")
             extrato += f"Saque: R$ {valor_saque:.2f}-"
             saldo -= valor_saque     
 
