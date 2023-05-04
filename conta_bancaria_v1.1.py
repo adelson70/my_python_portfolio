@@ -76,7 +76,6 @@ while True:
 
     # bloco de codigo que fara o saque da conta bancaria
     elif opcao == "s":
-        numero_saques += 1
         limpar_tela()
 
         if saldo == 0:
@@ -84,7 +83,7 @@ while True:
             esperar()
             continue
 
-        if numero_saques > 3:
+        if numero_saques == LIMITE_SAQUES:
             print("Você atingiu seu limite de saque diario!")
             esperar()
             limpar_tela()
@@ -115,7 +114,9 @@ while True:
 
         else:
             limpar_tela()
+            numero_saques += 1
             print(f"Você sacou R$ {valor_saque:.2f}")
+            esperar()
             extrato += f"Saque: R$ {valor_saque:.2f}-"
             saldo -= valor_saque     
 
@@ -123,14 +124,19 @@ while True:
     elif opcao == "e":
         limpar_tela()
 
+        # cria um arquivo de texto para ser o extrato bancario
+        extrato_bancario = open("extrato_bancario.txt","w")
+
         for i in extrato:
             if i == "-":
-                print("\n")
+                extrato_bancario.write("\n")
             else:
-                print(i,end="")
+                extrato_bancario.write(i)
 
-        print(f"Saldo Atual: R$ {saldo:.2f}")
-        esperar(10)
+        extrato_bancario.write(f"Saldo Atual: R$ {saldo:.2f}")
+        extrato_bancario.close()
+        print("Extrato Bancario Impresso com Sucesso!")
+        esperar(5)
 
     # bloco de codigo que ira encerrar o loop
     elif opcao == "q":
