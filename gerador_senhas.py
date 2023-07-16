@@ -2,6 +2,7 @@
 #
 # GERADOR DE SENHA
 # gera uma senha de 12 caracteres
+# armazena as senhas geradas num bloco de notas de nome "senhas"
 # 3 letras minusculas, 3 letras maiusculas, 3 numeros, 3 simbolos
 # usuario podera passar o parametro de quantidade de senhas (opcional)
 # linkedin:
